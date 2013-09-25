@@ -1,0 +1,7 @@
+﻿.filter{margin:10px 0;padding:5px;position:relative;_position:static;z-index:10;background:#faf9f9;color:#806f66}
+.filter i{position:absolute;display:inline-block;overflow:hidden}
+.spuFilter{margin:0;padding:10px 5px}
+.filter-fix{position:fixed;_position:absolute;width:980px;margin-top:10px;z-index:999;padding:5px;top:-10px;box-shadow:0 1px 5px #ccc}
+.filter a{color:#806f66;cursor:pointer}
+.filter a:hover{color:#b10000;text-decoration:none}
+

@@ -1,0 +1,365 @@
+﻿body {
+    padding-bottom:60px;
+    color: #5a5a5a;
+    background:url(../Images/back015.gif) repeat;
+}
+li{
+    list-style-type: none;
+    }
+.content-wrapper {
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 2px 0 2px rgba(100,100,100,0.1),-2px 0 2px rgba(100,100,100,0.1);
+    
+    
+}
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel .item {
+
+    position:relative;
+}
+.carousel .item .content{
+    min-height: 100px;
+   
+}
+.carousel .item .content .header{
+    height: 100px;
+    border-bottom:solid #333 5px;
+}
+.carousel .item .content .header .title{
+    
+    width:20%;
+    background:rgb(219, 14, 14);
+    color:#fff;
+    padding:20px;
+    font-size:25px;
+    font-weight:bold;
+    float:left;
+}
+.carousel .item .content .header .logo{
+    height:100%;
+    width:50%;
+    float:left;
+    padding-left:10%;
+}
+.carousel .item .content .header .logo h1{
+   
+    color:#FC0;
+    font-family:"隶书";
+    text-align:center;
+   
+}
+.carousel .item .content .header .logo h4{
+   
+    color:#FC0;
+    font-family:"隶书";
+    text-align:center;
+   
+}
+.carousel .item .content .cont .center{
+   text-align: center;
+}
+.carousel .item .content .cont{
+    min-height: 500px;
+    _height:500px;    
+}
+.carousel .item .content .cont .cover{
+    background:url(../Images/01_small.jpg);
+    width:240px;
+    height:320px;
+}
+.carousel .item .content .cont ul li{
+    margin-bottom:10px; 
+}
+.carousel .item .content .cont a{
+    font-size:20px;
+    color:#000;
+    font-family:"微软雅黑"; 
+}
+.carousel .item .content .bord_r{
+    border-right:5px solid #333;
+}
+.carousel .item .content .pad_t{
+    padding-top:30px;
+}
+.carousel .item .content .pad_l{
+    padding-left:30px;
+}
+.carousel .item .content .space{
+    margin-top:20px;
+}
+.carousel .item .content .company{
+    font-family:"黑体";
+    color:#000;
+}
+.carousel .item .content .featurette-divider{
+   /* border-top:1px solid #eeeeee;
+    border-bottom:1px solid #ffffff;*/
+    border:1px solid #eeeeee;
+}
+.content .in_head {
+    height:50px;
+    border-bottom:solid 1px #ccc;
+    margin-bottom:40px;
+ }
+ .content .in_cont {
+    min-height:500px;
+    
+ }
+ .content .in_cont .page_img{
+    width:450px;
+    height:390px;
+    background:url(../Images/ms_imga.jpg);
+ }
+ .content .in_cont .page_imgb{
+    width:450px;
+    height:390px;
+    background:url(../Images/ms_imgb.jpg);
+ }
+ .content .in_cont .page_imgc{
+    width:450px;
+    height:390px;
+    background:url(../Images/ms_imgc.jpg);
+ }
+ .content .in_cont .page_font{
+    font-family:"Microsoft Yahei","\5b8b\4f53"; 
+    font-size:16px;
+    color:#333;
+    line-height:30px;
+ }
+ .content .in_head .ms_log{
+   width:30px;
+   height:30px;
+   background:url(../Images/in_logo.png);
+   margin-top:10px;
+   float:left;
+ }
+  .content .in_head p{
+   margin:10px 0 0 10px;
+   float:left;
+   font-family:"@Adobe 明體 Std L";
+   font-size:12px;
+   line-height:14px;
+ }
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    /*height: 500px;*/
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+#pin_view_arrows .prev:hover {
+    background-position: -80px 0;
+}
+#pin_view_arrows .prev {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 60px;
+    height: 600px;
+    background: url(../Images/pin_prev_next_big.png) 0 0 no-repeat;
+    margin-top: -300px;
+    cursor: pointer;
+}
+#pin_view_arrows .next:hover {
+    background-position: -320px 0;
+}
+#pin_view_arrows .next {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 60px;
+    height: 600px;
+    background: url(../Images/pin_prev_next_big.png) -240px 0 no-repeat;
+    margin-top: -300px;
+    cursor: pointer;
+}
+.navbar .nav > li img{
+        width:39px;
+        height:32px
+    }
+
+.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    background-color: #111111;
+}
+@media (min-width: 1200px){
+    .content-wrapper {
+         padding: 0 60px;
+    }
+
+}
+@media (max-width: 979px){
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-right:0px;
+        margin-left:0px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+    }
+    .navbar .nav > li {
+        float: left;
+    }
+    .nav-collapse, .nav-collapse.collapse {
+        height: auto;
+       
+    }
+    .navbar .btn-navbar{
+        float:right;
+     }
+    .carousel .item {
+        min-height: 800px;
+        
+    }
+}
+@media (max-width: 767px)
+{
+    body{
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+     .navbar .nav > li img{
+        width:23px;
+        height:19px
+    }
+    .content-wrapper {
+        padding:0;    
+    }
+     .content-pad {
+        padding:0 20px;    
+    }
+     .carousel .item .content .pad_t {
+        padding-top: 0px;
+    }
+    .carousel .item .content .header .logo h1{
+   
+        color:#FC0;
+        font-family:"隶书";
+        text-align:center;
+        font-size:20px;
+        margin:0px;
+    }
+    .carousel .item .content .header .logo h4{
+   
+        color:#FC0;
+        font-family:"隶书";
+        text-align:center;
+        font-size:10px;
+        margin:0px;
+    }
+    .carousel .item .content{
+        min-height:50px;
+   
+    }
+    .carousel .item .content .header{
+        height:70px;
+        border-bottom:solid #333 3px;
+    }
+    .carousel .item .content .header .title{
+       
+        width:35%;
+        background:rgb(219, 14, 14);
+        color:#fff;
+        padding:10px 0 0 10px;
+        font-size:16px;
+        font-weight:normal;
+        float:left;
+    }
+    .carousel .item .content .bord_r{
+        border-right:0px;
+    }
+    .carousel .item .content .cont a{
+        font-size:14px;
+        
+    }
+   .til_img_a{
+        width:100px;
+        height:120px;   
+        background: url(../Images/img_a.jpg) no-repeat;
+        
+     }
+    .til_img_b{
+        width:150px;
+        height:220px;   
+        background: url(../Images/img_b.jpg) no-repeat;
+        
+     }
+   .cont ul li{
+        border-bottom:solid 1px #ccc;
+        padding:10px 20px 0px 10px;
+        min-height:50px;
+    } 
+     .content .in_cont .page_img{
+        width:260px;
+        height:225px;
+        background:url(../Images/sm_ms_imga.jpg);
+        margin-bottom:20px;
+     }
+      .content .in_cont .page_imgb{
+        width:260px;
+        height:225px;
+        background:url(../Images/sm_ms_imgb.jpg);
+        margin-bottom:20px;
+     }
+     .content .in_cont .page_imgc{
+        width:260px;
+        height:225px;
+        background:url(../Images/sm_ms_imgc.jpg);
+        margin-bottom:20px;
+     }
+    .cont ul{
+        margin:0px;
+    } 
+    .cont ul li .til{
+        width:150px;
+    }
+     .cont ul li .til_a{
+        width:100px;
+    }  
+     .cont ul li .til_a .til_child{
+       min-height:50px;
+       border-bottom:solid 1px #ccc;
+    }  
+    .cont ul li .til p{
+       font-size:10px;
+       color:#ccc;
+       font-family:"微软雅黑";
+    }            
+}

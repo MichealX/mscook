@@ -1,0 +1,788 @@
+﻿ /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    background:url(../Images/bg0.png) repeat;
+}
+li {
+    list-style: none;
+}
+#site-mast
+{
+    background: #454545;
+    height: 32px;
+    font-size: 12px;
+    border-top: 1px solid #EEE;
+   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FFFEFEFE',endColorstr='#FFFAFAFA');
+    background-image: -webkit-linear-gradient(top,#fefefe,#fafafa);
+    background-image: -moz-linear-gradient(top,#fefefe,#fafafa);
+    background-image: -o-linear-gradient(top,#fefefe,#fafafa);
+    background-image: linear-gradient(top,#fefefe,#fafafa);
+    -webkit-box-shadow: 0 0 0 1px #ccc,0 0 0 2px #dfdfdf,0 0 5px 3px #f0f0f0;
+    -moz-box-shadow: 0 0 0 1px #ccc,0 0 0 2px #dfdfdf,0 0 5px 3px #f0f0f0;
+    box-shadow: 0 0 0 1px #ccc,0 0 0 2px #dfdfdf,0 0 5px 3px #f0f0f0;
+    }
+.site-mast__user-nav {
+    position: relative;  
+    z-index: 90;
+}
+.site-mast .mobile-info {
+    float: left;
+}
+.site-mast__separator {
+    height: 28px;
+}
+.site-mast__separator--left {
+    border-right: 1px solid #EEE;
+}
+.mobile-info__item {
+    float: left;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #EEE;
+}
+ .mobile-info__link {
+    padding: 6px 8px;
+}
+.mobile-info__link {
+    display: inline-block;
+    padding: 8px;
+    width: 89px;
+    height: 16px;
+    color: #999;
+    text-align: center;
+    vertical-align: top;
+}
+/*.site-mast__user-nav .icon-mobile {
+    background-position: -28px -28px;
+}
+.site-mast__user-nav .icon {
+    display: inline-block;
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: text-top;
+    background: url(../Images/sp-header-new.png) left top no-repeat;
+}*/
+.site-mast__user-nav .icon {
+    display: inline-block;
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: text-top;
+    
+}
+.cf {
+    zoom: 1;
+}
+.site-mast .user-info {
+    float: left;
+    display: inline-block;
+    height: 16px;
+    padding: 8px;
+    _padding: 0;
+    color: #666;
+    vertical-align: top;
+}
+.site-mast--poisearch .user-info {
+    padding: 6px 8px;
+    _padding: 0;
+}
+.user-info__moto {
+    color: #999;
+}
+.user-info__login {
+    padding: 0 10px;
+    color: #f76120;
+    border-right: 1px solid #DDD;
+}
+.user-info__signup {
+    padding: 0 10px;
+    color: #666;
+}
+.site-mast__user-w {
+    float: right;
+    _line-height: 32px;
+}
+.site-mast__user-nav-w {
+    height: 28px;
+}
+.site-mast__separator {
+    float: left;
+    height: 32px;
+    vertical-align: top;
+}
+.site-mast__separator {
+    height: 28px;
+}
+.site-mast .dropdown {
+    float: left;
+    position: relative;
+    vertical-align: top;
+}
+.site-mast--poisearch .dropdown__toggle {
+    padding: 6px 20px 6px 12px;
+    _padding: 0 20px 0 12px;
+}
+.site-mast .dropdown__toggle {
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    padding: 8px 20px 8px 12px;
+    margin: 0 1px 0;
+    color: #666;
+    z-index: 93;
+    _padding: 0 20px 0 12px;
+}
+.site-mast .dropdown__toggle {
+    color: #666;
+}
+.tri--dropdown {
+    top: 14px;
+}
+.site-mast .tri--dropdown {
+    top: 16px;
+    right: 7px;
+    border-top: 3px solid #999;
+}
+.tri {
+    position: absolute;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    border: 3px dashed transparent;
+}
+.site-mast .dropdown-menu--account {
+    min-width: 80px;
+}
+/*.site-mast .site-mast--poisearch .dropdown-menu {
+    top: 27px;
+}
+.site-mast .dropdown-menu {
+    position: absolute;
+    top: 31px;
+    right: 0;
+    padding: 10px 0;
+    border: 1px solid #DDD;
+    color: #666;
+    background: #FFF;
+    z-index: 92;
+    box-shadow: 1px 1px 2px rgba(203,203,203,0.5);
+    
+}
+.site-mast .dropdown-menu--text .dropdown-menu__item {
+    display: block;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    background: #FFF;
+    color: #666;
+    transition: background .2s ease-in;
+}*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top,#FFD702, #FFC202);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD702), to(#FFC202));
+    background-image: -webkit-linear-gradient(top, #FFD702, #FFC202);
+    background-image: -o-linear-gradient(top, #FFD702, #FFC202);
+    background-image: linear-gradient(to bottom, #FFD702, #FFC202);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD702', endColorstr='#FFC202', GradientType=0);
+}
+.site-mast .dropdown__toggle .vertical-bar {
+    position: absolute;
+    right: -2px;
+    top: 12px;
+    display: block;
+    height: 12px;
+    width: 1px;
+    background: #DDD;
+    z-index: 94;
+}
+#header
+{
+    margin-top:35px;
+    width: 100%;
+    background:#fff;
+    
+    
+ }
+ #logo {
+    width: 174px;
+    height: 49px;
+    background: url(../Images/ms_logo.png) no-repeat left;
+    
+}
+#logo a strong {
+    display: none;
+}
+ .headerarea {
+    
+    
+    padding: 15px 0;
+   min-height: 50px;
+}
+.item-stream {
+    background-color: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.full-search-bar {
+   
+    margin-top:5px;
+    position: relative;
+    
+}
+.full-search-bar ul{
+   
+    margin: 0;
+   
+}
+.full-search-bar .search-input-item {
+    padding: 5px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+.stream-item, .ui-menu-item {
+    position: relative;
+    background-color: #FFD602;
+    padding: 6px;
+}
+.full-search-bar form {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.full-search-bar form input[type=text] {
+    height: 35px;
+}
+.full-search-bar form input[type=text] {
+    float: left;
+    height: 30px;
+    font-size: 10px;
+    line-height: 24px;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    border-right: 0;
+    width: 95%;
+    margin-bottom: 0;
+}
+.full-search-bar form button[type=submit] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46px;
+    height: 40px;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+}
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.navbar-wrapper .navbar {
+
+    background: none;
+}
+
+    /* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+     /*background: url(../Images/in-bg.png) repeat-x;*/
+     background: #FFC202;
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+}
+
+    /* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+    font: bold 14px/1.5 Tahoma,Helvetica,arial,sans-serif;
+    color: #FFF;
+    background-color:#FDB600;
+    font-size: 16px;
+    /*font-family: "微软雅黑";*/
+
+}
+
+.navbar-inverse .nav>li>a 
+{
+    font: bold 14px/1.5 Tahoma,Helvetica,arial,sans-serif;
+    color: #fff;
+    /*font-family: "微软雅黑";*/
+    font-size: 16px;
+}
+
+    /* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 10px 20px;
+}
+
+    /* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+.carousel {
+    margin-bottom: 60px;
+}
+
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel .item {
+    height: 500px;
+    position:relative;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    /*height: 500px;*/
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+
+.marketing{
+    background: #fff;
+    padding:30px;
+}
+.content-wrapper {
+   
+   
+    background: #fff;
+    box-shadow: 2px 0 2px rgba(100,100,100,0.1),-2px 0 2px rgba(100,100,100,0.1);
+    
+    
+}
+.marketing .center{
+    text-align: center;
+}
+.marketing .thumbnails {
+    margin-top:10px;
+}
+
+.marketing h2 {
+    font-weight: bold;
+    color:#333;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+   
+}
+.marketing h3 {
+    font-weight: bold;
+    color:#333;
+    font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+.marketing .large_til {
+   margin:30px 0;
+   padding:20px 0;
+}
+.marketing  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color:#333;
+}
+ .marketing .detail{
+        width:250px;
+        margin-top:10px;
+        margin-left:20px;
+        font-family:"微软雅黑";
+        font-size:12px;
+   }
+.section-head {
+    margin: 0 0 .75em 0;
+    padding: 0 0 .25em 0;
+    font-family: "titillium","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    /*background: url(../Images/ui_header.png) no-repeat center bottom;*/
+    border-top:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+ }
+ .section-header {
+    margin: 0 0 .75em 0;
+    padding: 0 0 .25em 0;
+    font-family: "titillium","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    /*background: url(../Images/ui_header.png) no-repeat center bottom;*/
+    border-bottom-style:double;
+    border-bottom-color:#ccc;
+ }
+ .bs-docs-social {
+    padding: 0px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  .marketing .own_center{
+        margin:0px auto;
+   }
+   .marketing .bord{
+        border:#ccc 1px solid;
+   }
+   .marketing .til_fl{
+        float:left;
+        margin-top:20px;
+        margin-left:20px;
+   }
+  .marketing .row .span6 .ulpad {
+    display: block;
+    /*padding-left:10%;*/
+    
+}
+ 
+ .marketing .row  a{
+    display: block;
+    color:#FC0;
+     font-family:"微软雅黑";
+}
+ .marketing .row  a:hover{
+    
+    color: #08c ;
+    text-decoration: none;
+    
+}
+.marketing .row  a .title{
+    display: block;
+    font-size: 125%;
+    
+}
+
+.marketing .row  a .last_title{
+    display: block;
+    font-size: 100%;
+    padding-left:15%;
+    font-family:"@Adobe 黑体 Std R";
+    
+}
+ .marketing .hot-tag {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    line-height: 20px;
+    min-height: 20px;
+    margin-bottom: 8px;
+}
+ .marketing .hot-tag a{
+    color:#333;
+}
+.marketing .hot-tag .hot-tag-bg {
+    background: #ad855c;
+    padding: 0 5px;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-right: 10px;
+    color: white;
+    margin-top: 1px;
+    float:left;
+}
+ul.delicious-health 
+{
+    margin-left:0px;
+    margin-top: 15px;
+    margin-bottom: 37px;
+    display:block;
+}
+ul.delicious-health li {
+    height: 26px;
+    line-height: 26px;
+    margin-right: 25px;
+}
+.marketing .hot-other li a {
+    padding-left: 9px;
+    color: #666;
+    }
+.hot-other li {
+    overflow: hidden;
+    float: left;
+    width: 201px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    background: white url(../Images/hot-bg.jpg) no-repeat 0 10px;
+}
+ .marketing  a .date{
+    display: block;
+    color:#999;
+    font-size: 100%;
+}
+    /* Featurettes
+    ------------------------- */
+
+.featurette-divider {
+    margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+    /* Thin out the marketing headings */
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+ .featurette-heading .smaller{
+        font-size: 30px;
+    }
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+@media (max-width: 979px) {
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+        padding: 0px;
+    }
+
+    .navbar {
+        margin-bottom: 0px;
+    }
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .navbar-inner {
+        border-radius: 0;
+        margin: 0;
+
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+
+    .carousel img {
+        width: auto;
+    /*height: 500px;*/
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+   
+}
+    
+@media (max-width: 767px) {
+
+    body {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-inner {
+        margin: 0px;
+        padding: 0px;
+    }
+    .marketing .row  a .title{
+        display: block;
+        font-size: 100%;
+        font-family:"隶书";
+    }
+    .marketing .row  a .last_title{
+        display: block;
+        font-size: 85%;
+        padding-left:15%;
+        font-family:"@Adobe 微软雅黑 Std R";
+    
+    }
+     .marketing .row a .date{
+        display: block;
+        color:#999;
+        font-size: 85%;
+    }
+    .marketing .til_fl{
+      
+        margin-top:10px;
+        margin-left:10px;
+   }
+    .marketing .detail{
+        width:150px;
+       
+        margin-left:10px;
+        
+        font-size:12px;
+   }
+   ul.delicious-health {
+        font-size:12px;
+    }
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel {
+        margin-bottom: 20px;
+    }
+    .carousel .container {
+
+    }
+
+    .carousel .item {
+        height:150px;
+    }
+
+    .carousel img {
+    /*height: 300px;*/
+    }
+
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 50px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 3px;
+    }
+     .container .carousel-caption h1
+    {
+        font-size:14px;
+    }
+     .container .carousel-caption .lead
+    {
+        font-size:12px;
+    }
+    .featurette-divider {
+        margin: 10px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .marketing .hot-tag {
+        font-size: 14px;
+        
+    }
+   .carousel-caption .btn {
+        font-size:2px;
+        width:60px;
+        height:18px;
+    }
+    .btn-large {
+    padding: 2px 2px;
+    font-size: 17.5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    }
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+
+   .featurette-heading .smaller{
+        font-size: 20px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+
+}
